@@ -24,8 +24,8 @@
 4. Change the directory at the line 121, 122 and 234, 235 by your directory of **zsh-autosuggestions.zsh** and the **zsh-syntax-highlighting.zsh** in the .zshrc.
 5. Launch your terminal drag the **.terminal** in the list run a new window of the terminal (source .zshrc in your home directory if needed).  
 
-You can choose line pater at the line 110 of .zshrc
+You can choose line patern at the line 110 of .zshrc
 ### Known bug : 
 
-- Accuracy of the colorisation : some time the colorisation is a bit bland when there is suggestions.
+- Minor problem of the colorisation : some time the colorisation is a bit bland when there is suggestions.
 - Problem of compatibility with certain font (like it with the "Pro" preset)
