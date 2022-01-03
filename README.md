@@ -27,5 +27,5 @@
 You can choose line pater at the line 110 of .zshrc
 ### Known bug : 
 
-- Accuracy of the colorisation : some time the colorisation is a bit bland
+- Accuracy of the colorisation : some time the colorisation is a bit bland when there is suggestions.
 - Problem of compatibility with certain font (like it with the "Pro" preset)
