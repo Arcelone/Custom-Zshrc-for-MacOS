@@ -61,10 +61,10 @@ configure_prompt() {
     [ "$EUID" -eq 0 ] && prompt_symbol=💀
     case "$PROMPT_ALTERNATIVE" in
         twoline)
-            PROMPT=$'%F{%(#.blue.green)}┌──(%B%F{%(#.red.012)}%n$prompt_symbol%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue} %%)%b%F{reset} '
+            PROMPT=$'%F{%(#.blue.green)}┌──(%B%F{%(#.red.012)}%n$prompt_symbol%m%b%F{%(#.blue.green)})-[%B%F{red}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue} %%)%b%F{reset} '
             RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
             ;;
-        oneline)
+        oneline) 
             PROMPT=$'%B%F{%(#.red.blue)}%n@%m%b%F{reset}:%B%F{%(#.blue.green)}%~%b%F{reset}%(#.#.$) '
             RPROMPT=
             ;;
@@ -158,7 +158,11 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 export CLICOLOR=1                       # Add colors to Terminal (ls etc)
-export PATH="/usr/local/Cellar/openvpn/2.5.8/sbin/:$PATH"      # Add openpvn  
+
+#custom
+export PATH="/usr/local/Cellar/openvpn/2.5.8/sbin/:$PATH"       # Add openpvn  
+alias pip='pip3.11'                                             # Add pip3
+alias python3='/usr/local/bin/python3.11'                       # Add python3 from brew classical directory
 
 # Take advantage of $LS_COLORS for completion as well
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
