@@ -27,5 +27,4 @@
 You can choose line patern at the line 110 of .zshrc
 ### Known bug : 
 
-- Minor problem of the colorisation : some time the colorisation is a bit bland when there is suggestions.
 - Problem of compatibility with certain font (like it with the "Pro" preset)
